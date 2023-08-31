@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e73acd2f5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        function myFunction(x) {
+  x.classList.toggle("change");
+}
+    </script>
+<div id="heaader">
+    <div class="container" onclick="myfunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <nav>
+            <img src="pictures/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#made">Service</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I am<span> Deepak Kumar</span> <br>From RNSIT MCA</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello world,My Name is Deepak Kumar cv.I am 22 years old from a Bangalore city studying Mca at RNS Institute of Technology.I am the last born of My Parents and we are Four in number.My Father is a Farmer and My Mother is a House wife.Whoever I am today is because of my Parents.I always Love to play the Sports So I always worries about my Fitness and My Health.As I have a little bit of Hearing Problem I cant score a centum marks But I Will Score a Quite Good Marks.I know that I am Perfect and I never care About Others words but one thing is true that I am who I am. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C++</span><br>Object Oriented Programming Language</li>
+                        <li><span>JAVA</span><br>Popular Programming Language</li>
+                        <li><span>SQL</span><br>Structured Query Language</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Milk Dairy Management System</span><br>Using VB.NET</li>
+                        <li><span>Book store Management System</span><br>Using PHP Language</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>10TH STANDARD</span><br>ST CLARE HIGH SCHOOL</li>
+                        <li><span>PUC</span><br>RNS PRE UNIVERSITY COLLEGE</li>
+                        <li><span>BCA DEGREE</span><bR>RNS FIRST GRADE COLLEGE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------service--------------->
+
+<div id="made">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <h2>NSS</h2>
+            <p>I Served Both Bangalore University And Vishveshwaraya Techology University As a National Service Scheme(NSS) volunteer.</p>
+            <a href="https://nss.gov.in/">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-sharp fa-solid fa-cloud"></i>
+            <h2>Plantation</h2>
+            <p>I Served to Plant about 500 Bamboo Plants in our village and 2 surrounding villages to protect the Enviornment.</p>
+            <a href="https://en.wikipedia.org/wiki/Plantation">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <h2>Self Donation</h2>
+            <p>Donating food for the poor people when ever it needs and i am serving food to oldage homes on My Birthday.</p>
+            <a href="https://www.helpageindia.org/our-work/welfare-development/old-age-homes/">Learn more</a>
+           </div> 
+        </div> 
+    </div>
+</div>
+
+<!------------hobbies----------->
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+        <div class="work-list">
+            <div class="kabbadi">
+                <img src="pictures/kabbadi.png">
+                <div class="layer">
+                    <h3>Kabbadi</h3>
+                    <p>I love to play Kabbadi Since I was 6 years old.Whenever I see or Whereever I see Playing Kabbadi My eyes get wet Because of My Health.</p>
+                <a href="https://en.wikipedia.org/wiki/Kabaddi"><i class="fa-solid fa-hand-point-up"></i></a>
+                </div>
+            </div>
+            <div class="cycleing">
+                <img src="pictures/cycleing.png">
+                <div class="layer">
+                    <h3>Cycleing</h3>
+                    <p>I love to ride Bycycle Since My Childhood.It is fasion of rideing a Bycycle in Childhood But Now The Generation has been changed a lot It is like a Machine for Fitness.</p>
+                <a href="https://www.decathlon.in/shop/decathlon-cycling-sports"><i class="fa-solid fa-hand-point-up"></i></a>
+                </div>
+            </div>
+            <div class="dance">
+                <img src="pictures/dance.png">
+                <div class="layer">
+                    <h3>Dance</h3>
+                    <p>My Grand father was good in drama and dance that Character has came to Me Behaindly.I participated In 3 Dramas and 2 janapadha Dances Called pooja kunitha and hulhi vesha </p>
+                <a href="https://en.wikipedia.org/wiki/Dance_in_India"><i class="fa-solid fa-hand-point-up"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.bestproductsreviews.com/pc-games-dgd?targetid=dat-2336256051146614&matchtype=b&device=c&campaignid=436467507&creative=&adgroupid=1351301585349491&feeditemid=&loc_physical_ms=90&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$Furniture&target=&aceid={aceid}&adposition=&trackid=uk_all_top_11_1&mId=407-132-4411&trackOld=true&msclkid=0c2dfd150ba51abe8f4499e51624386d" class="btn">See More</a>
+    </div>
+</div>
+<!-----------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>mca.deepakkumarcv@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8431333895</p>
+                <div class="social-icons">
+                    <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+               <a href="pictures/my-cv.pdf" download class="btn btn2">Download CV</a> 
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights are Made with <i class="fa-solid fa-heart"></i> by Deepak Kumar</p>
+    </div>
+</div>
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcSpGC3QoxtVz1y0O0sNhDMvKpev0TbKDYudUx7wYdsTsVZ6M_365k8IrQpoBo0dukTQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+          form.reset()      
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
